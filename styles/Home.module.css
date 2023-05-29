@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 85vh;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+
+.home>p {
+  font-size: 45px;
+  margin: 0;
+}
+
+.passionate {
+  font-size: 25px;
+  margin: 0;
+}
+
+.position {
+  font-size: 25px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.line {
+  width: 10%;
+  border: none;
+  border-top: 3px solid var(--white);
+  margin: 20px 0;
+}
+
+.me {
+  display: flex;
+  text-align: left;
+}
+
+.button {
+  margin: 10rem 0 0 0;
+  width: 40%;
+  height: 5rem;
+  background-color: var(--beige);
+}
+
+.button h2 {
+  font-family: var(--Montserrat);
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.placeholder {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background-color: red;
+}

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web:wght@900&display=swap');
+
+:root {
+  --white: #ffffff;
+  --beige: #E0D3CC;
+  --black: #1c2127;
+  --Montserrat: "Montserrat";
+  --Titillium: "Titillium";
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: var(--Montserrat);
+}
