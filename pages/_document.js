@@ -1,13 +1,19 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
-export default function Document() {
-  return (
-    <Html lang="en">
-      <Head />
-      <body>
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  )
+export default class MyDocument extends Document {
+  render() {
+    return (
+      <Html>
+        <Head>
+          <link rel="preload" href="/path/to/your.css" as="style" />
+          <link rel="stylesheet" href="/path/to/your.css" />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
+  }
 }
+
