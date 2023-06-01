@@ -5,8 +5,8 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="preload" href="/path/to/your.css" as="style" />
-          <link rel="stylesheet" href="/path/to/your.css" />
+          <link rel="preload" href="/styles/Home.module.css" as="style" />
+          <link rel="stylesheet" href="/styles/Home.module.css" />
         </Head>
         <body>
           <Main />
