@@ -1,0 +1,35 @@
+.background_beige {
+    background-color: var(--beige);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 30;
+}
+
+.background_brown {
+    background-color: var(--brown);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 20;
+}
+
+.background_grey {
+    background-color: var(--grey);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
