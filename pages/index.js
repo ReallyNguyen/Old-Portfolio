@@ -16,7 +16,6 @@ export default function Home() {
 
   return (
     <>
-      <Transition />
       <m.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

@@ -7,7 +7,6 @@ import styles from "@/styles/About.module.css"
 export default function About() {
     return (
         <>
-            <Transition />
             <m.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
