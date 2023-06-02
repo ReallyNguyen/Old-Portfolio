@@ -2,12 +2,12 @@ import React from "react";
 import { motion as m } from 'framer-motion';
 import Transition from "@/components/transition";
 import Navbar from "@/components/navbar";
-import styles from "../styles/About.module.css"
+import styles from "@/styles/About.module.css"
 
 export default function About() {
     return (
         <>
-
+            <Transition />
             <m.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
