@@ -24,13 +24,13 @@ export default function Home() {
       >
         <main className={styles.main}>
           <Navbar />
-          <div className={styles.container}>
-            <div className={styles.home}>
-              <p>Hello, I am Jordan Nguyen</p>
-              <hr className={styles.line} />
-              <div className={styles.me}>
-                <p className={styles.passionate}>Passionate&nbsp;</p>
-                <h2 className={styles.position}>
+          <div style={{ height: '85vh', display: 'flex', alignItems: 'center', justifyContent: 'space-evenly' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'center', alignContent: 'center', flexWrap: 'wrap' }}>
+              <p style={{ fontSize: '45px', margin: 0 }}>Hello, I am Jordan Nguyen</p>
+              <hr style={{ width: '10%', border: 'none', borderTop: '3px solid var(--white)', margin: '20px 0' }} />
+              <div style={{ display: 'flex', textAlign: 'left' }}>
+                <p style={{ fontSize: '25px', margin: 0 }}>Passionate&nbsp;</p>
+                <h2 style={{ fontSize: '25px', margin: 0, fontWeight: '700' }}>
                   <Typewriter
                     options={{
                       strings: ["Web Developer", "UI/UX Designer"],
@@ -40,11 +40,12 @@ export default function Home() {
                   />
                 </h2>
               </div>
-              <button className={styles.button} onClick={handleButtonClick}>
+              <button style={{ margin: '10rem 0 0 0', width: '40%', height: '5rem', backgroundColor: 'var(--beige)', fontFamily: 'var(--Montserrat-Bold)', fontWeight: '550', fontSize: '15px', transition: 'all 0.3s ease' }}
+                onClick={handleButtonClick}>
                 <h2>Get in Touch</h2>
               </button>
             </div>
-            <div className={styles.placeholder}></div>
+            <div style={{ width: '450px', height: '450px', borderRadius: '50%', backgroundColor: 'red' }}></div>
           </div>
         </main>
       </m.div>
