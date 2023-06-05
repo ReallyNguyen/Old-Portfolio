@@ -23,13 +23,13 @@ export default function About() {
                             </div>
                             <div className={styles.about_me}>
                                 <p>
-                                    I'm Jordan, a frontend developer and UI/UX designer passionate about creating engaging user interfaces. With a strong background in frontend development and design, I craft visually appealing websites and applications.
+                                    Hello, I'm Jordan, a website developer specializing in crafting impactful online experiences that foster meaningful connections. I believe that well-crafted websites leave a lasting impression on users.
                                 </p>
                                 <p>
-                                    Experienced in HTML, CSS, JavaScript, and React, I collaborate effectively to bring ideas to life. I'm committed to continuous learning and staying up-to-date with industry trends.
+                                    With a strong foundation in web development languages and frameworks such as HTML, CSS, JavaScript, and React, I focus on creating visually captivating, functional, and user-friendly websites.
                                 </p>
                                 <p>
-                                    I prioritize user-centric design, aiming for delightful experiences that align with business goals.
+                                    Collaborating effectively, I bring ideas to life while staying up-to-date with industry trends and continuously learning. My priority is to deliver delightful user experiences that align with business goals.
                                 </p>
                             </div>
                         </div>

@@ -6,6 +6,7 @@ import Typewriter from 'typewriter-effect';
 import { motion as m } from 'framer-motion';
 import Transition from '@/components/transition';
 import Navbar from '@/components/navbar';
+import Background from "@/components/background";
 
 export default function Home() {
   const router = useRouter();
@@ -22,30 +23,38 @@ export default function Home() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.75, delay: 0.6, ease: "easeInOut" }}
       >
+        <div style={{ zIndex: -1, position: "fixed" }}>
+          <Background />
+        </div>
         <main className={styles.main}>
           <Navbar />
-          <div style={{ height: '85vh', display: 'flex', alignItems: 'center', justifyContent: 'space-evenly' }}>
+          <div style={{ height: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'space-evenly', margin: '1.5rem 8.5rem 0 8.5rem' }}>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'center', alignContent: 'center', flexWrap: 'wrap' }}>
               <p style={{ fontSize: '45px', margin: 0 }}>Hello, I am Jordan Nguyen</p>
               <hr style={{ width: '10%', border: 'none', borderTop: '3px solid var(--white)', margin: '20px 0' }} />
-              <div style={{ display: 'flex', textAlign: 'left' }}>
-                <p style={{ fontSize: '25px', margin: 0 }}>Passionate&nbsp;</p>
-                <h2 style={{ fontSize: '25px', margin: 0, fontWeight: '700' }}>
-                  <Typewriter
-                    options={{
-                      strings: ["Web Developer", "UI/UX Designer"],
-                      autoStart: true,
-                      loop: true,
-                    }}
-                  />
-                </h2>
+              <div style={{ display: 'flex', textAlign: 'left', flexDirection: 'column' }}>
+                <div style={{ display: 'flex', flexDirection: 'row' }}>
+                  <p style={{ fontSize: '28px', margin: 0 }}>Passionate&nbsp;</p>
+                  <h2 style={{ fontSize: '28px', margin: 0, fontWeight: '700' }}>
+                    <Typewriter
+                      options={{
+                        strings: ["Front-End Developer", "UI/UX Developer", "Web Designer"],
+                        autoStart: true,
+                        loop: true,
+                      }}
+                    />
+                  </h2>
+                </div>
+                <p style={{ width: "60%" }}>I specialize in website development, and my belief is that well-crafted websites leave a lasting impression and foster meaningful connections. I focus on creating visually captivating, functional, and user-friendly websites using a strong foundation in web development languages and frameworks.</p>
               </div>
-              <button style={{ margin: '10rem 0 0 0', width: '40%', height: '5rem', backgroundColor: 'var(--beige)', fontFamily: 'var(--Montserrat-Bold)', fontWeight: '550', fontSize: '15px', transition: 'all 0.3s ease' }}
-                onClick={handleButtonClick}>
+              <button
+                className={styles.button}
+                onClick={handleButtonClick}
+              >
                 <h2>Get in Touch</h2>
               </button>
+
             </div>
-            <div style={{ width: '450px', height: '450px', borderRadius: '50%', backgroundColor: 'red' }}></div>
           </div>
         </main>
       </m.div>
