@@ -27,11 +27,6 @@ export default function Navbar() {
                         <h2 className={`${styles.navbar_item} ${router.pathname === '/contact' ? styles.active : ''}`}>Contact</h2>
                     </Link>
                 </nav>
-                <div className={styles.social}>
-                    <Image src="/email.svg" alt="LinkedIn" width={35} height={35} />
-                    <Image src="/linkedin.svg" alt="LinkedIn" width={35} height={35} />
-                    <Image src="/instagram.svg" alt="LinkedIn" width={35} height={35} />
-                </div>
             </div>
 
         </>

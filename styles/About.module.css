@@ -1,32 +1,7 @@
-.container {
-    margin: 5rem 7.5rem;
-}
-
-.intro {
-    display: flex;
-    align-items: center;
-}
-
-.about {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.about_me {
-    width: 35rem;
-}
-
-.line {
-    width: 9%;
-    border: none;
-    border-top: 3px solid var(--white);
-    margin: 20px 20px;
-}
-
-.placeholder {
-    width: 450px;
+.circle {
+    width: 350px;
     height: 450px;
-    border-radius: 50%;
-    background-color: red;
+    border-radius: 15px;
+    background-color: #000;
+    /* Replace with your desired background color */
 }
